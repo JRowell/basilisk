@@ -1,0 +1,215 @@
+\hypertarget{classpipeline_1_1_pipeline}{\section{pipeline.\-Pipeline \-Class \-Reference}
+\label{classpipeline_1_1_pipeline}\index{pipeline.\-Pipeline@{pipeline.\-Pipeline}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpipeline_1_1_pipeline_a587fd29c3e21a1c64a72274a41f917c7}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classpipeline_1_1_pipeline_ae2927e6fbb228221193d325ea157373e}{run}
+\item 
+def \hyperlink{classpipeline_1_1_pipeline_a587fd29c3e21a1c64a72274a41f917c7}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classpipeline_1_1_pipeline_a9cc2f72d2d10a06d711c2c23cdff4b30}{start}
+\item 
+def \hyperlink{classpipeline_1_1_pipeline_a46e0d920ba60c9edffec65d7d4ae0b81}{set}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a372247804622ee3c473640452d2bee8d}{user}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_afa460d0a63775493a8835233557c8960}{host}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_aec602b83cddbb7377f93854974143f7f}{\-Msg\-Theme}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_afda469d549f3084efc0df04ceecd1ad5}{prompt}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a209c8adfeaecdc25a006016a64ecdb95}{conffile}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a1a185fd9980da0b54b8c5552ceaefae1}{confpath}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_ad3cc484877090fc3eb91eff1c4c6470e}{delim}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a52ff684ce577e3353efff7558fc90933}{logfile}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a118f80f0ddd2beb69068c9da05a23f6b}{logpath}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a3cec058fa82045588fe8b26e2f4eaed8}{comment}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a608454c2b0019a3a29d1385bfa46bc52}{inpath}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a2c265b3d2e076fbd794dac0c79d9964d}{outpath}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_acbcba83d19ac17e952468942e10e17b5}{inext}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a8c15d50241eaec14cdf166cdd1fd1f21}{outprefix}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a33db6829062950146bdaa879e1a5d4af}{\-F\-L\-A\-G\-\_\-\-B\-A\-T\-C\-H}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_afba496011d664deb15adce4f8ffa7998}{\-F\-L\-A\-G\-\_\-\-D\-E\-B\-U\-G}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a08292fcc6c515e2e72d20714a73ef07e}{\-F\-L\-A\-G\-\_\-\-S\-I\-L\-E\-N\-T}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a326f5cc89f5ce31f974a82fbe1d58f1c}{\-F\-L\-A\-G\-\_\-\-L\-O\-G}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a7e8a89d9fa5d41fa20523dbfbb249f3f}{\-F\-L\-A\-G\-\_\-\-D\-E\-P\-S}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a3b48565560db847600347ebc1900e0b5}{config}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a638a81af93bd7d50a9a65a8fcc91244a}{files}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a05a0191f3036ce38a324a47b621ed04c}{settings}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a857dfce5324c19414e4a9dad7a37f1f6}{quitter}
+\item 
+\hyperlink{classpipeline_1_1_pipeline_a4d4fe65f6db61202b18851125ece0d73}{stager}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}
+Pipline class is the workhorse of the Basilisk system.
+
+Before you can execute an instance of the Pipeline class,
+a minimal set of parameters must be specified.
+
+piplines can execute in several modes:
+
+    1) Interactive - prompts
+    2) Batch - no prompts
+    3) Debug - verbose output
+    4) Silent - no output
+    5) Logging - writes message to file
+
+The default mode is 'interactive'. To enable other modes,
+set the relevant flags.
+\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classpipeline_1_1_pipeline_a587fd29c3e21a1c64a72274a41f917c7}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf pipeline.\-Pipeline.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classpipeline_1_1_pipeline_a587fd29c3e21a1c64a72274a41f917c7}
+\begin{DoxyVerb}Create an instance of the Pipeline class.\end{DoxyVerb}
+ \hypertarget{classpipeline_1_1_pipeline_a587fd29c3e21a1c64a72274a41f917c7}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf pipeline.\-Pipeline.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classpipeline_1_1_pipeline_a587fd29c3e21a1c64a72274a41f917c7}
+\begin{DoxyVerb}Initialize the pipeline object\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classpipeline_1_1_pipeline_ae2927e6fbb228221193d325ea157373e}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!run@{run}}
+\index{run@{run}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf pipeline.\-Pipeline.\-run} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classpipeline_1_1_pipeline_ae2927e6fbb228221193d325ea157373e}
+\begin{DoxyVerb}Start the pipeline.\end{DoxyVerb}
+ \hypertarget{classpipeline_1_1_pipeline_a46e0d920ba60c9edffec65d7d4ae0b81}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!set@{set}}
+\index{set@{set}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf pipeline.\-Pipeline.\-set} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dict}
+\end{DoxyParamCaption}
+)}}\label{classpipeline_1_1_pipeline_a46e0d920ba60c9edffec65d7d4ae0b81}
+\begin{DoxyVerb}Access function for configuring settings.\end{DoxyVerb}
+ \hypertarget{classpipeline_1_1_pipeline_a9cc2f72d2d10a06d711c2c23cdff4b30}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!start@{start}}
+\index{start@{start}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf pipeline.\-Pipeline.\-start} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classpipeline_1_1_pipeline_a9cc2f72d2d10a06d711c2c23cdff4b30}
+\begin{DoxyVerb}Master control sequence.\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classpipeline_1_1_pipeline_a3cec058fa82045588fe8b26e2f4eaed8}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!comment@{comment}}
+\index{comment@{comment}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{comment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::comment}}}\label{classpipeline_1_1_pipeline_a3cec058fa82045588fe8b26e2f4eaed8}
+\hypertarget{classpipeline_1_1_pipeline_a209c8adfeaecdc25a006016a64ecdb95}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!conffile@{conffile}}
+\index{conffile@{conffile}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{conffile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::conffile}}}\label{classpipeline_1_1_pipeline_a209c8adfeaecdc25a006016a64ecdb95}
+\hypertarget{classpipeline_1_1_pipeline_a3b48565560db847600347ebc1900e0b5}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!config@{config}}
+\index{config@{config}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::config}}}\label{classpipeline_1_1_pipeline_a3b48565560db847600347ebc1900e0b5}
+\hypertarget{classpipeline_1_1_pipeline_a1a185fd9980da0b54b8c5552ceaefae1}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!confpath@{confpath}}
+\index{confpath@{confpath}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{confpath}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::confpath}}}\label{classpipeline_1_1_pipeline_a1a185fd9980da0b54b8c5552ceaefae1}
+\hypertarget{classpipeline_1_1_pipeline_ad3cc484877090fc3eb91eff1c4c6470e}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!delim@{delim}}
+\index{delim@{delim}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{delim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::delim}}}\label{classpipeline_1_1_pipeline_ad3cc484877090fc3eb91eff1c4c6470e}
+\hypertarget{classpipeline_1_1_pipeline_a638a81af93bd7d50a9a65a8fcc91244a}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!files@{files}}
+\index{files@{files}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{files}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::files}}}\label{classpipeline_1_1_pipeline_a638a81af93bd7d50a9a65a8fcc91244a}
+\hypertarget{classpipeline_1_1_pipeline_a33db6829062950146bdaa879e1a5d4af}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!\-F\-L\-A\-G\-\_\-\-B\-A\-T\-C\-H@{\-F\-L\-A\-G\-\_\-\-B\-A\-T\-C\-H}}
+\index{\-F\-L\-A\-G\-\_\-\-B\-A\-T\-C\-H@{\-F\-L\-A\-G\-\_\-\-B\-A\-T\-C\-H}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{\-F\-L\-A\-G\-\_\-\-B\-A\-T\-C\-H}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::\-F\-L\-A\-G\-\_\-\-B\-A\-T\-C\-H}}}\label{classpipeline_1_1_pipeline_a33db6829062950146bdaa879e1a5d4af}
+\hypertarget{classpipeline_1_1_pipeline_afba496011d664deb15adce4f8ffa7998}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!\-F\-L\-A\-G\-\_\-\-D\-E\-B\-U\-G@{\-F\-L\-A\-G\-\_\-\-D\-E\-B\-U\-G}}
+\index{\-F\-L\-A\-G\-\_\-\-D\-E\-B\-U\-G@{\-F\-L\-A\-G\-\_\-\-D\-E\-B\-U\-G}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{\-F\-L\-A\-G\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::\-F\-L\-A\-G\-\_\-\-D\-E\-B\-U\-G}}}\label{classpipeline_1_1_pipeline_afba496011d664deb15adce4f8ffa7998}
+\hypertarget{classpipeline_1_1_pipeline_a7e8a89d9fa5d41fa20523dbfbb249f3f}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!\-F\-L\-A\-G\-\_\-\-D\-E\-P\-S@{\-F\-L\-A\-G\-\_\-\-D\-E\-P\-S}}
+\index{\-F\-L\-A\-G\-\_\-\-D\-E\-P\-S@{\-F\-L\-A\-G\-\_\-\-D\-E\-P\-S}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{\-F\-L\-A\-G\-\_\-\-D\-E\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::\-F\-L\-A\-G\-\_\-\-D\-E\-P\-S}}}\label{classpipeline_1_1_pipeline_a7e8a89d9fa5d41fa20523dbfbb249f3f}
+\hypertarget{classpipeline_1_1_pipeline_a326f5cc89f5ce31f974a82fbe1d58f1c}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!\-F\-L\-A\-G\-\_\-\-L\-O\-G@{\-F\-L\-A\-G\-\_\-\-L\-O\-G}}
+\index{\-F\-L\-A\-G\-\_\-\-L\-O\-G@{\-F\-L\-A\-G\-\_\-\-L\-O\-G}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{\-F\-L\-A\-G\-\_\-\-L\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::\-F\-L\-A\-G\-\_\-\-L\-O\-G}}}\label{classpipeline_1_1_pipeline_a326f5cc89f5ce31f974a82fbe1d58f1c}
+\hypertarget{classpipeline_1_1_pipeline_a08292fcc6c515e2e72d20714a73ef07e}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!\-F\-L\-A\-G\-\_\-\-S\-I\-L\-E\-N\-T@{\-F\-L\-A\-G\-\_\-\-S\-I\-L\-E\-N\-T}}
+\index{\-F\-L\-A\-G\-\_\-\-S\-I\-L\-E\-N\-T@{\-F\-L\-A\-G\-\_\-\-S\-I\-L\-E\-N\-T}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{\-F\-L\-A\-G\-\_\-\-S\-I\-L\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::\-F\-L\-A\-G\-\_\-\-S\-I\-L\-E\-N\-T}}}\label{classpipeline_1_1_pipeline_a08292fcc6c515e2e72d20714a73ef07e}
+\hypertarget{classpipeline_1_1_pipeline_afa460d0a63775493a8835233557c8960}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!host@{host}}
+\index{host@{host}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{host}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::host}}}\label{classpipeline_1_1_pipeline_afa460d0a63775493a8835233557c8960}
+\hypertarget{classpipeline_1_1_pipeline_acbcba83d19ac17e952468942e10e17b5}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!inext@{inext}}
+\index{inext@{inext}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{inext}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::inext}}}\label{classpipeline_1_1_pipeline_acbcba83d19ac17e952468942e10e17b5}
+\hypertarget{classpipeline_1_1_pipeline_a608454c2b0019a3a29d1385bfa46bc52}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!inpath@{inpath}}
+\index{inpath@{inpath}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{inpath}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::inpath}}}\label{classpipeline_1_1_pipeline_a608454c2b0019a3a29d1385bfa46bc52}
+\hypertarget{classpipeline_1_1_pipeline_a52ff684ce577e3353efff7558fc90933}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!logfile@{logfile}}
+\index{logfile@{logfile}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{logfile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::logfile}}}\label{classpipeline_1_1_pipeline_a52ff684ce577e3353efff7558fc90933}
+\hypertarget{classpipeline_1_1_pipeline_a118f80f0ddd2beb69068c9da05a23f6b}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!logpath@{logpath}}
+\index{logpath@{logpath}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{logpath}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::logpath}}}\label{classpipeline_1_1_pipeline_a118f80f0ddd2beb69068c9da05a23f6b}
+\hypertarget{classpipeline_1_1_pipeline_aec602b83cddbb7377f93854974143f7f}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!\-Msg\-Theme@{\-Msg\-Theme}}
+\index{\-Msg\-Theme@{\-Msg\-Theme}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{\-Msg\-Theme}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::\-Msg\-Theme}}}\label{classpipeline_1_1_pipeline_aec602b83cddbb7377f93854974143f7f}
+\hypertarget{classpipeline_1_1_pipeline_a2c265b3d2e076fbd794dac0c79d9964d}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!outpath@{outpath}}
+\index{outpath@{outpath}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{outpath}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::outpath}}}\label{classpipeline_1_1_pipeline_a2c265b3d2e076fbd794dac0c79d9964d}
+\hypertarget{classpipeline_1_1_pipeline_a8c15d50241eaec14cdf166cdd1fd1f21}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!outprefix@{outprefix}}
+\index{outprefix@{outprefix}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{outprefix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::outprefix}}}\label{classpipeline_1_1_pipeline_a8c15d50241eaec14cdf166cdd1fd1f21}
+\hypertarget{classpipeline_1_1_pipeline_afda469d549f3084efc0df04ceecd1ad5}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!prompt@{prompt}}
+\index{prompt@{prompt}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{prompt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::prompt}}}\label{classpipeline_1_1_pipeline_afda469d549f3084efc0df04ceecd1ad5}
+\hypertarget{classpipeline_1_1_pipeline_a857dfce5324c19414e4a9dad7a37f1f6}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!quitter@{quitter}}
+\index{quitter@{quitter}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{quitter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::quitter}}}\label{classpipeline_1_1_pipeline_a857dfce5324c19414e4a9dad7a37f1f6}
+\hypertarget{classpipeline_1_1_pipeline_a05a0191f3036ce38a324a47b621ed04c}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!settings@{settings}}
+\index{settings@{settings}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{settings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::settings}}}\label{classpipeline_1_1_pipeline_a05a0191f3036ce38a324a47b621ed04c}
+\hypertarget{classpipeline_1_1_pipeline_a4d4fe65f6db61202b18851125ece0d73}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!stager@{stager}}
+\index{stager@{stager}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{stager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::stager}}}\label{classpipeline_1_1_pipeline_a4d4fe65f6db61202b18851125ece0d73}
+\hypertarget{classpipeline_1_1_pipeline_a372247804622ee3c473640452d2bee8d}{\index{pipeline\-::\-Pipeline@{pipeline\-::\-Pipeline}!user@{user}}
+\index{user@{user}!pipeline::Pipeline@{pipeline\-::\-Pipeline}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pipeline.\-Pipeline\-::user}}}\label{classpipeline_1_1_pipeline_a372247804622ee3c473640452d2bee8d}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+pipeline-\/v0.\-1/\hyperlink{pipeline-v0_81_2pipeline_8py}{pipeline.\-py}\item 
+\hyperlink{pipeline_8py}{pipeline.\-py}\end{DoxyCompactItemize}

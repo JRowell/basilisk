@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" ?>
+<casaxml xmlns="http://casa.nrao.edu/schema/psetTypes.html"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://casa.nrao.edu/schema/casa.xsd
+    file:///opt/casa/code/xmlcasa/xml/casa.xsd">
+    <task type="function" name="bas">
+        <shortdescription>CASA Pipeline.</shortdescription>
+        <description>CASA Pipeline.</description>
+        <input>
+
+            <param type="string" name="target">
+                <description>Name of target source.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="fluxcal">
+                <description>Name of flux calibration source.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="phasecal">
+                <description>Name of phase calibration source.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="fringefinder">
+                <description>Name of the fringefinder source.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="bpcal">
+                <description>Name of the bandpass calibration source.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="catlist">
+                <description>Comma-separated list of .ms files to use.</description>
+                <value>ALL</value>
+            </param>
+
+            <param type="string" name="FLAG_INT">
+                <description>Run in batch mode.</description>
+                <value>False</value>
+                <allowed kind="enum">
+                    <value>TRUE</value>
+                    <value>True</value>
+                    <value>true</value>
+                    <value>T</value>
+                    <value>t</value>
+                    <value>YES</value>
+                    <value>Yes</value>
+                    <value>yes</value>
+                    <value>Y</value>
+                    <value>Y</value>
+                    <value>1</value>
+                    <value>FALSE</value>
+                    <value>False</value>
+                    <value>false</value>
+                    <value>F</value>
+                    <value>f</value>
+                    <value>NO</value>
+                    <value>No</value>
+                    <value>no</value>
+                    <value>N</value>
+                    <value>n</value>
+                    <value>0</value>
+                </allowed>
+            </param>
+
+            <param type="string" name="FLAG_BATCH">
+                <description>Run in batch mode.</description>
+                <value>False</value>
+                <allowed kind="enum">
+                    <value>TRUE</value>
+                    <value>True</value>
+                    <value>true</value>
+                    <value>T</value>
+                    <value>t</value>
+                    <value>YES</value>
+                    <value>Yes</value>
+                    <value>yes</value>
+                    <value>Y</value>
+                    <value>Y</value>
+                    <value>1</value>
+                    <value>FALSE</value>
+                    <value>False</value>
+                    <value>false</value>
+                    <value>F</value>
+                    <value>f</value>
+                    <value>NO</value>
+                    <value>No</value>
+                    <value>no</value>
+                    <value>N</value>
+                    <value>n</value>
+                    <value>0</value>
+                </allowed>
+            </param>
+
+            <param type="string" name="FLAG_DEBUG">
+                <description>Enable debugging messages.</description>
+                <value>False</value>
+                <allowed kind="enum">
+                    <value>TRUE</value>
+                    <value>True</value>
+                    <value>true</value>
+                    <value>T</value>
+                    <value>t</value>
+                    <value>YES</value>
+                    <value>Yes</value>
+                    <value>yes</value>
+                    <value>Y</value>
+                    <value>Y</value>
+                    <value>1</value>
+                    <value>FALSE</value>
+                    <value>False</value>
+                    <value>false</value>
+                    <value>F</value>
+                    <value>f</value>
+                    <value>NO</value>
+                    <value>No</value>
+                    <value>no</value>
+                    <value>N</value>
+                    <value>n</value>
+                    <value>0</value>
+                </allowed>
+            </param>
+
+            <param type="string" name="FLAG_SILENT">
+                <description>Suppress all console output.</description>
+                <value>False</value>
+                <allowed kind="enum">
+                    <value>TRUE</value>
+                    <value>True</value>
+                    <value>true</value>
+                    <value>T</value>
+                    <value>t</value>
+                    <value>YES</value>
+                    <value>Yes</value>
+                    <value>yes</value>
+                    <value>Y</value>
+                    <value>Y</value>
+                    <value>1</value>
+                    <value>FALSE</value>
+                    <value>False</value>
+                    <value>false</value>
+                    <value>F</value>
+                    <value>f</value>
+                    <value>NO</value>
+                    <value>No</value>
+                    <value>no</value>
+                    <value>N</value>
+                    <value>n</value>
+                    <value>0</value>
+                </allowed>
+            </param>
+
+            <param type="string" name="FLAG_LOG">
+                <description>Enable logging to file.</description>
+                <value>True</value>
+                <allowed kind="enum">
+                    <value>TRUE</value>
+                    <value>True</value>
+                    <value>true</value>
+                    <value>T</value>
+                    <value>t</value>
+                    <value>YES</value>
+                    <value>Yes</value>
+                    <value>yes</value>
+                    <value>Y</value>
+                    <value>Y</value>
+                    <value>1</value>
+                    <value>FALSE</value>
+                    <value>False</value>
+                    <value>false</value>
+                    <value>F</value>
+                    <value>f</value>
+                    <value>NO</value>
+                    <value>No</value>
+                    <value>no</value>
+                    <value>N</value>
+                    <value>n</value>
+                    <value>0</value>
+                </allowed>
+            </param>
+
+            <param type="string" name="converts">
+                <description>A list of files to convert to .ms files.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="StageSelection">
+                <description>Comma-separated list of stages to use.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="confpath">
+                <description>Absolute path to the config file.</description>
+                <value>./</value>
+            </param>
+
+            <param type="string" name="conffile">
+                <description>Name of the config file.</description>
+                <value>default.cfg</value>
+            </param>
+
+            <param type="string" name="inpath">
+                <description>Absolute path for the input data directory.</description>
+                <value>./</value>
+            </param>
+
+            <param type="string" name="inext">
+                <description>File extension of input data files.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="outpath">
+                <description>Absolute path of the output data files.</description>
+                <value>./</value>
+            </param>
+
+            <param type="string" name="outprefix">
+                <description>Filename prefix for the output data files.</description>
+                <value>output</value>
+            </param>
+
+            <param type="string" name="logpath">
+                <description>Absolute path of the log file.</description>
+                <value>./</value>
+            </param>
+
+            <param type="string" name="logfile">
+                <description>Name for the log file.</description>
+                <value>default.log</value>
+            </param>
+
+            <param type="string" name="comment">
+                <description>Meaningful comment to help distinguish each run.</description>
+                <value></value>
+            </param>
+
+            <param type="string" name="timeformat">
+                <description>Format of the log file and console timestamps.</description>
+                <value>%Y-%m-%d %H:%m:%S</value>
+            </param>
+
+            <param type="string" name="prompt">
+                <description>Add a prompt string after the log file and console timestamps.</description>
+                <value></value>
+            </param>
+                  
+        </input>
+
+        <returns type="void"/>
+       
+    </task>
+</casaxml>

@@ -1,0 +1,57 @@
+\hypertarget{e_m_e_r_l_i_n__dbcon_8py}{\section{basilisk.\-bak/njj\-\_\-scripts/e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.py \-File \-Reference}
+\label{e_m_e_r_l_i_n__dbcon_8py}\index{basilisk.\-bak/njj\-\_\-scripts/e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-py@{basilisk.\-bak/njj\-\_\-scripts/e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-py}}
+}
+\subsection*{\-Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacee_m_e_r_l_i_n__dbcon}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a38e946965ca0b344061675a1a395cb08}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-usernum} = raw\-\_\-input()
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-indisk} = raw\-\_\-input()
+\item 
+\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a10a2e5d653a36bede24e60c74e4ed0a3}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-outdisk} = indisk
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ac41ff8a94095c2e305fed016874bb042}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-nchan} = raw\-\_\-input()
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a504efe89c5a32a95950b6c5e078315e5}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-today} = date.\-today()
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_aab95cae7a70890c472b8b8feb7d11ceb}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-now} = today.\-strftime(\char`\"{}\%\-Y\%m\%d\char`\"{})
+\item 
+list \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ab058e469d8921bc98b806969ffd1e2a2}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-list} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a429c00f0b03f4f27e9854fbed5db3764}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-avspc} = \-A\-I\-P\-S\-Task('\-A\-V\-S\-P\-C')
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ab17a9c5aaeb6b610ba038d24839ab3b2}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-dbcon} = \-A\-I\-P\-S\-Task('\-D\-B\-C\-O\-N')
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a0b851c2b085a1289afca9f960d54d4c6}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-msort} = \-A\-I\-P\-S\-Task('\-M\-S\-O\-R\-T')
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a306e8762b0925929428f0264f23a6674}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-indxr} = \-A\-I\-P\-S\-Task('\-I\-N\-D\-X\-R')
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ad71cfe913fce9baa62e0ea086283c28e}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-pca} = \-A\-I\-P\-S\-Cat(indisk)
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a5d477fadbfaebfae4c30eb008c302f01}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-numfiles} = len(pca\mbox{[}indisk\mbox{]})
+\item 
+int \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a02dbe30556487e3ce9717f700e863dd7}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-i} = 0
+\item 
+list \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a8fd1244644d23f545f8a48a7713c73c5}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-filelist} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a2cd3578d0533cf504b1b59ae5521fe7a}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-uvdata} = \-A\-I\-P\-S\-U\-V\-Data(pca\mbox{[}indisk\mbox{]}\mbox{[}i\mbox{]}\mbox{[}\char`\"{}name\char`\"{}\mbox{]}, pca\mbox{[}indisk\mbox{]}\mbox{[}i\mbox{]}\mbox{[}\char`\"{}klass\char`\"{}\mbox{]}, indisk, pca\mbox{[}indisk\mbox{]}\mbox{[}i\mbox{]}\mbox{[}\char`\"{}seq\char`\"{}\mbox{]})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a7d3a6f07cf87a01be51860872f9299f4}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-queue\-N\-A\-M\-E} = deque(\mbox{[}$\,$\mbox{]})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a486d24d9ef703df2acee99e4e3817adb}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-queue\-K\-L\-A\-S} = deque(\mbox{[}$\,$\mbox{]})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a0e55c34dc1aa2bca11dd0c616d8ece31}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-queue\-S\-E\-Q} = deque(\mbox{[}$\,$\mbox{]})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ab9be6ea6704da37fee2dea65d409a370}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-uvdata1} = \-A\-I\-P\-S\-U\-V\-Data(queue\-N\-A\-M\-E.\-popleft(), queue\-K\-L\-A\-S.\-popleft(), indisk, queue\-S\-E\-Q.\-popleft())
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_af2aa3e117609642e2b32301d834da77b}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-uvdata2} = \-A\-I\-P\-S\-U\-V\-Data(queue\-N\-A\-M\-E.\-popleft(), queue\-K\-L\-A\-S.\-popleft(), indisk, queue\-S\-E\-Q.\-popleft())
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a04e130b43c6df2215bebc23fa9dca4b1}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-data} = \-A\-I\-P\-S\-U\-V\-Data(queue\-N\-A\-M\-E\mbox{[}0\mbox{]}, queue\-K\-L\-A\-S\mbox{[}0\mbox{]}, indisk, queue\-S\-E\-Q\mbox{[}0\mbox{]})
+\item 
+int \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a62b3c7f92b7b6c06d24b9c76e31aa4e7}{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon.\-j} = 0
+\end{DoxyCompactItemize}

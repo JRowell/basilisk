@@ -1,0 +1,130 @@
+\hypertarget{namespacepipeline}{\section{pipeline \-Namespace \-Reference}
+\label{namespacepipeline}\index{pipeline@{pipeline}}
+}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpipeline_1_1_pipeline}{\-Pipeline}
+\item 
+class \hyperlink{classpipeline_1_1_settings}{\-Settings}
+\item 
+class \hyperlink{classpipeline_1_1_quitter}{\-Quitter}
+\item 
+class \hyperlink{classpipeline_1_1_stager}{\-Stager}
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacepipeline_ac80264ca3205ed250219160b6187dff9}{datadir} = raw\-\_\-input('\-Enter the name of the data directory\-: ')
+\item 
+tuple \hyperlink{namespacepipeline_a325f1a801713a0281d349dfbff21cb78}{flog} = open('pipeline.\-cfg','w')
+\item 
+tuple \hyperlink{namespacepipeline_a9c3dea94f17dc5a1da55cb9ca7dea740}{files} = np.\-loadtxt('tmp\-\_\-pipeline.\-log',dtype='\-S512')
+\item 
+list \hyperlink{namespacepipeline_a6f2fb1d3250f1f8b6bd4535247b8a9a7}{fringenum} = \mbox{[}0,3\mbox{]}
+\item 
+list \hyperlink{namespacepipeline_a3621af01b0571f7eff023145c99b3401}{fringefits} = \hyperlink{namespacepipeline_a9c3dea94f17dc5a1da55cb9ca7dea740}{files}\mbox{[}\hyperlink{namespacepipeline_a6f2fb1d3250f1f8b6bd4535247b8a9a7}{fringenum}\mbox{]}
+\item 
+string \hyperlink{namespacepipeline_a3bae9a2cdf4fba11dac330b8005310a4}{fringename} = '1436+6336'
+\item 
+list \hyperlink{namespacepipeline_ac1c3efa973c83639249a0124f5d0b1be}{phasenum} = \mbox{[}0,3\mbox{]}
+\item 
+list \hyperlink{namespacepipeline_ae6d6bf5c8ff903dca0d8e8c8c0aa83fb}{phasefits} = \hyperlink{namespacepipeline_a9c3dea94f17dc5a1da55cb9ca7dea740}{files}\mbox{[}\hyperlink{namespacepipeline_ac1c3efa973c83639249a0124f5d0b1be}{phasenum}\mbox{]}
+\item 
+string \hyperlink{namespacepipeline_a3889949f24f7ee0ddf076131f3ba6faa}{phasename} = '1436+6336'
+\item 
+list \hyperlink{namespacepipeline_ac1761c5c6599d1ba17c7208c9f78354a}{targnum} = \mbox{[}1,2\mbox{]}
+\item 
+list \hyperlink{namespacepipeline_a0a1c37799e950441dca0da0fb652ee9a}{targfits} = \hyperlink{namespacepipeline_a9c3dea94f17dc5a1da55cb9ca7dea740}{files}\mbox{[}\hyperlink{namespacepipeline_ac1761c5c6599d1ba17c7208c9f78354a}{targnum}\mbox{]}
+\item 
+string \hyperlink{namespacepipeline_a16df6cb6fb969f0e5ca43f213ce64118}{targname} = '1449+6336'
+\item 
+tuple \hyperlink{namespacepipeline_aba50186d512bf0abac666d6240112f06}{freqsquash} = int(raw\-\_\-input('\-Enter the factor for frequency squashing '))
+\item 
+string \hyperlink{namespacepipeline_a0c63f0078f780b925a9ff4e7152fd594}{vis} = 'fringe.\-ms'
+\item 
+string \hyperlink{namespacepipeline_ab3aedaf24061f05c06f13e3974bb528f}{mode} = 'quack'
+\item 
+float \hyperlink{namespacepipeline_a79d2ebe895f856da9610081a56d7d7b8}{quackinterval} = 30.\-0
+\item 
+string \hyperlink{namespacepipeline_a7f4725d9856743ba5e6bf500e4e5ecb0}{quackmode} = 'beg'
+\item 
+tuple \hyperlink{namespacepipeline_a588e4fbfb4e0417f484202a3b99b6246}{f} = open('whereis\-\_\-rficonsole')
+\item 
+tuple \hyperlink{namespacepipeline_a4082c06691225d68a0ad3c6c56e73418}{line} = f.\-readline()
+\item 
+list \hyperlink{namespacepipeline_aba26565fe80f75bd4b4aaaad740095d6}{command} = \hyperlink{namespacepipeline_a4082c06691225d68a0ad3c6c56e73418}{line}\mbox{[}0\-:len(\hyperlink{namespacepipeline_a4082c06691225d68a0ad3c6c56e73418}{line})-\/1\mbox{]}
+\item 
+tuple \hyperlink{namespacepipeline_a82223a54352d8bd68ff34cec174a4c48}{log} = logging.\-get\-Logger()
+\item 
+tuple \hyperlink{namespacepipeline_af5fe35ff38e8f9792769a9dec62ec7f2}{p} = \hyperlink{classpipeline_1_1_pipeline}{\-Pipeline}()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{namespacepipeline_aba26565fe80f75bd4b4aaaad740095d6}{\index{pipeline@{pipeline}!command@{command}}
+\index{command@{command}!pipeline@{pipeline}}
+\subsubsection[{command}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf pipeline\-::command} = {\bf line}\mbox{[}0\-:len({\bf line})-\/1\mbox{]}}}\label{namespacepipeline_aba26565fe80f75bd4b4aaaad740095d6}
+\hypertarget{namespacepipeline_ac80264ca3205ed250219160b6187dff9}{\index{pipeline@{pipeline}!datadir@{datadir}}
+\index{datadir@{datadir}!pipeline@{pipeline}}
+\subsubsection[{datadir}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf pipeline\-::datadir} = raw\-\_\-input('\-Enter the name of the data directory\-: ')}}\label{namespacepipeline_ac80264ca3205ed250219160b6187dff9}
+\hypertarget{namespacepipeline_a588e4fbfb4e0417f484202a3b99b6246}{\index{pipeline@{pipeline}!f@{f}}
+\index{f@{f}!pipeline@{pipeline}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf pipeline\-::f} = open('whereis\-\_\-rficonsole')}}\label{namespacepipeline_a588e4fbfb4e0417f484202a3b99b6246}
+\hypertarget{namespacepipeline_a9c3dea94f17dc5a1da55cb9ca7dea740}{\index{pipeline@{pipeline}!files@{files}}
+\index{files@{files}!pipeline@{pipeline}}
+\subsubsection[{files}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf pipeline\-::files} = np.\-loadtxt('tmp\-\_\-pipeline.\-log',dtype='\-S512')}}\label{namespacepipeline_a9c3dea94f17dc5a1da55cb9ca7dea740}
+\hypertarget{namespacepipeline_a325f1a801713a0281d349dfbff21cb78}{\index{pipeline@{pipeline}!flog@{flog}}
+\index{flog@{flog}!pipeline@{pipeline}}
+\subsubsection[{flog}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf pipeline\-::flog} = open('pipeline.\-cfg','w')}}\label{namespacepipeline_a325f1a801713a0281d349dfbff21cb78}
+\hypertarget{namespacepipeline_aba50186d512bf0abac666d6240112f06}{\index{pipeline@{pipeline}!freqsquash@{freqsquash}}
+\index{freqsquash@{freqsquash}!pipeline@{pipeline}}
+\subsubsection[{freqsquash}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf pipeline\-::freqsquash} = int(raw\-\_\-input('\-Enter the factor for frequency squashing '))}}\label{namespacepipeline_aba50186d512bf0abac666d6240112f06}
+\hypertarget{namespacepipeline_a3621af01b0571f7eff023145c99b3401}{\index{pipeline@{pipeline}!fringefits@{fringefits}}
+\index{fringefits@{fringefits}!pipeline@{pipeline}}
+\subsubsection[{fringefits}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf pipeline\-::fringefits} = {\bf files}\mbox{[}{\bf fringenum}\mbox{]}}}\label{namespacepipeline_a3621af01b0571f7eff023145c99b3401}
+\hypertarget{namespacepipeline_a3bae9a2cdf4fba11dac330b8005310a4}{\index{pipeline@{pipeline}!fringename@{fringename}}
+\index{fringename@{fringename}!pipeline@{pipeline}}
+\subsubsection[{fringename}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf pipeline\-::fringename} = '1436+6336'}}\label{namespacepipeline_a3bae9a2cdf4fba11dac330b8005310a4}
+\hypertarget{namespacepipeline_a6f2fb1d3250f1f8b6bd4535247b8a9a7}{\index{pipeline@{pipeline}!fringenum@{fringenum}}
+\index{fringenum@{fringenum}!pipeline@{pipeline}}
+\subsubsection[{fringenum}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf pipeline\-::fringenum} = \mbox{[}0,3\mbox{]}}}\label{namespacepipeline_a6f2fb1d3250f1f8b6bd4535247b8a9a7}
+\hypertarget{namespacepipeline_a4082c06691225d68a0ad3c6c56e73418}{\index{pipeline@{pipeline}!line@{line}}
+\index{line@{line}!pipeline@{pipeline}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf pipeline\-::line} = f.\-readline()}}\label{namespacepipeline_a4082c06691225d68a0ad3c6c56e73418}
+\hypertarget{namespacepipeline_a82223a54352d8bd68ff34cec174a4c48}{\index{pipeline@{pipeline}!log@{log}}
+\index{log@{log}!pipeline@{pipeline}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf pipeline\-::log} = logging.\-get\-Logger()}}\label{namespacepipeline_a82223a54352d8bd68ff34cec174a4c48}
+\hypertarget{namespacepipeline_ab3aedaf24061f05c06f13e3974bb528f}{\index{pipeline@{pipeline}!mode@{mode}}
+\index{mode@{mode}!pipeline@{pipeline}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf pipeline\-::mode} = 'quack'}}\label{namespacepipeline_ab3aedaf24061f05c06f13e3974bb528f}
+\hypertarget{namespacepipeline_af5fe35ff38e8f9792769a9dec62ec7f2}{\index{pipeline@{pipeline}!p@{p}}
+\index{p@{p}!pipeline@{pipeline}}
+\subsubsection[{p}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf pipeline\-::p} = {\bf \-Pipeline}()}}\label{namespacepipeline_af5fe35ff38e8f9792769a9dec62ec7f2}
+\hypertarget{namespacepipeline_ae6d6bf5c8ff903dca0d8e8c8c0aa83fb}{\index{pipeline@{pipeline}!phasefits@{phasefits}}
+\index{phasefits@{phasefits}!pipeline@{pipeline}}
+\subsubsection[{phasefits}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf pipeline\-::phasefits} = {\bf files}\mbox{[}{\bf phasenum}\mbox{]}}}\label{namespacepipeline_ae6d6bf5c8ff903dca0d8e8c8c0aa83fb}
+\hypertarget{namespacepipeline_a3889949f24f7ee0ddf076131f3ba6faa}{\index{pipeline@{pipeline}!phasename@{phasename}}
+\index{phasename@{phasename}!pipeline@{pipeline}}
+\subsubsection[{phasename}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf pipeline\-::phasename} = '1436+6336'}}\label{namespacepipeline_a3889949f24f7ee0ddf076131f3ba6faa}
+\hypertarget{namespacepipeline_ac1c3efa973c83639249a0124f5d0b1be}{\index{pipeline@{pipeline}!phasenum@{phasenum}}
+\index{phasenum@{phasenum}!pipeline@{pipeline}}
+\subsubsection[{phasenum}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf pipeline\-::phasenum} = \mbox{[}0,3\mbox{]}}}\label{namespacepipeline_ac1c3efa973c83639249a0124f5d0b1be}
+\hypertarget{namespacepipeline_a79d2ebe895f856da9610081a56d7d7b8}{\index{pipeline@{pipeline}!quackinterval@{quackinterval}}
+\index{quackinterval@{quackinterval}!pipeline@{pipeline}}
+\subsubsection[{quackinterval}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf pipeline\-::quackinterval} = 30.\-0}}\label{namespacepipeline_a79d2ebe895f856da9610081a56d7d7b8}
+\hypertarget{namespacepipeline_a7f4725d9856743ba5e6bf500e4e5ecb0}{\index{pipeline@{pipeline}!quackmode@{quackmode}}
+\index{quackmode@{quackmode}!pipeline@{pipeline}}
+\subsubsection[{quackmode}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf pipeline\-::quackmode} = 'beg'}}\label{namespacepipeline_a7f4725d9856743ba5e6bf500e4e5ecb0}
+\hypertarget{namespacepipeline_a0a1c37799e950441dca0da0fb652ee9a}{\index{pipeline@{pipeline}!targfits@{targfits}}
+\index{targfits@{targfits}!pipeline@{pipeline}}
+\subsubsection[{targfits}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf pipeline\-::targfits} = {\bf files}\mbox{[}{\bf targnum}\mbox{]}}}\label{namespacepipeline_a0a1c37799e950441dca0da0fb652ee9a}
+\hypertarget{namespacepipeline_a16df6cb6fb969f0e5ca43f213ce64118}{\index{pipeline@{pipeline}!targname@{targname}}
+\index{targname@{targname}!pipeline@{pipeline}}
+\subsubsection[{targname}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf pipeline\-::targname} = '1449+6336'}}\label{namespacepipeline_a16df6cb6fb969f0e5ca43f213ce64118}
+\hypertarget{namespacepipeline_ac1761c5c6599d1ba17c7208c9f78354a}{\index{pipeline@{pipeline}!targnum@{targnum}}
+\index{targnum@{targnum}!pipeline@{pipeline}}
+\subsubsection[{targnum}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf pipeline\-::targnum} = \mbox{[}1,2\mbox{]}}}\label{namespacepipeline_ac1761c5c6599d1ba17c7208c9f78354a}
+\hypertarget{namespacepipeline_a0c63f0078f780b925a9ff4e7152fd594}{\index{pipeline@{pipeline}!vis@{vis}}
+\index{vis@{vis}!pipeline@{pipeline}}
+\subsubsection[{vis}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf pipeline\-::vis} = 'fringe.\-ms'}}\label{namespacepipeline_a0c63f0078f780b925a9ff4e7152fd594}

@@ -1,0 +1,124 @@
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon}{\section{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon \-Namespace \-Reference}
+\label{namespacee_m_e_r_l_i_n__dbcon}\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a38e946965ca0b344061675a1a395cb08}{usernum} = raw\-\_\-input()
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk} = raw\-\_\-input()
+\item 
+\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a10a2e5d653a36bede24e60c74e4ed0a3}{outdisk} = \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk}
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ac41ff8a94095c2e305fed016874bb042}{nchan} = raw\-\_\-input()
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a504efe89c5a32a95950b6c5e078315e5}{today} = date.\-today()
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_aab95cae7a70890c472b8b8feb7d11ceb}{now} = today.\-strftime(\char`\"{}\%\-Y\%m\%d\char`\"{})
+\item 
+\hyperlink{namespacee_m_e_r_l_i_n__dbcon_ab058e469d8921bc98b806969ffd1e2a2}{list} \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ab058e469d8921bc98b806969ffd1e2a2}{list} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a429c00f0b03f4f27e9854fbed5db3764}{avspc} = \-A\-I\-P\-S\-Task('\-A\-V\-S\-P\-C')
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ab17a9c5aaeb6b610ba038d24839ab3b2}{dbcon} = \-A\-I\-P\-S\-Task('\-D\-B\-C\-O\-N')
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a0b851c2b085a1289afca9f960d54d4c6}{msort} = \-A\-I\-P\-S\-Task('\-M\-S\-O\-R\-T')
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a306e8762b0925929428f0264f23a6674}{indxr} = \-A\-I\-P\-S\-Task('\-I\-N\-D\-X\-R')
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ad71cfe913fce9baa62e0ea086283c28e}{pca} = \-A\-I\-P\-S\-Cat(\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a5d477fadbfaebfae4c30eb008c302f01}{numfiles} = len(\hyperlink{namespacee_m_e_r_l_i_n__dbcon_ad71cfe913fce9baa62e0ea086283c28e}{pca}\mbox{[}\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk}\mbox{]})
+\item 
+int \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a02dbe30556487e3ce9717f700e863dd7}{i} = 0
+\item 
+\hyperlink{namespacee_m_e_r_l_i_n__dbcon_ab058e469d8921bc98b806969ffd1e2a2}{list} \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a8fd1244644d23f545f8a48a7713c73c5}{filelist} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a2cd3578d0533cf504b1b59ae5521fe7a}{uvdata} = \-A\-I\-P\-S\-U\-V\-Data(\hyperlink{namespacee_m_e_r_l_i_n__dbcon_ad71cfe913fce9baa62e0ea086283c28e}{pca}\mbox{[}\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk}\mbox{]}\mbox{[}\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a02dbe30556487e3ce9717f700e863dd7}{i}\mbox{]}\mbox{[}\char`\"{}name\char`\"{}\mbox{]}, pca\mbox{[}\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk}\mbox{]}\mbox{[}\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a02dbe30556487e3ce9717f700e863dd7}{i}\mbox{]}\mbox{[}\char`\"{}klass\char`\"{}\mbox{]}, indisk, \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ad71cfe913fce9baa62e0ea086283c28e}{pca}\mbox{[}\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk}\mbox{]}\mbox{[}\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a02dbe30556487e3ce9717f700e863dd7}{i}\mbox{]}\mbox{[}\char`\"{}seq\char`\"{}\mbox{]})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a7d3a6f07cf87a01be51860872f9299f4}{queue\-N\-A\-M\-E} = deque(\mbox{[}$\,$\mbox{]})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a486d24d9ef703df2acee99e4e3817adb}{queue\-K\-L\-A\-S} = deque(\mbox{[}$\,$\mbox{]})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a0e55c34dc1aa2bca11dd0c616d8ece31}{queue\-S\-E\-Q} = deque(\mbox{[}$\,$\mbox{]})
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_ab9be6ea6704da37fee2dea65d409a370}{uvdata1} = \-A\-I\-P\-S\-U\-V\-Data(queue\-N\-A\-M\-E.\-popleft(), queue\-K\-L\-A\-S.\-popleft(), \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk}, queue\-S\-E\-Q.\-popleft())
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_af2aa3e117609642e2b32301d834da77b}{uvdata2} = \-A\-I\-P\-S\-U\-V\-Data(queue\-N\-A\-M\-E.\-popleft(), queue\-K\-L\-A\-S.\-popleft(), \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk}, queue\-S\-E\-Q.\-popleft())
+\item 
+tuple \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a04e130b43c6df2215bebc23fa9dca4b1}{data} = \-A\-I\-P\-S\-U\-V\-Data(\hyperlink{namespacee_m_e_r_l_i_n__dbcon_a7d3a6f07cf87a01be51860872f9299f4}{queue\-N\-A\-M\-E}\mbox{[}0\mbox{]}, \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a486d24d9ef703df2acee99e4e3817adb}{queue\-K\-L\-A\-S}\mbox{[}0\mbox{]}, \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{indisk}, \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a0e55c34dc1aa2bca11dd0c616d8ece31}{queue\-S\-E\-Q}\mbox{[}0\mbox{]})
+\item 
+int \hyperlink{namespacee_m_e_r_l_i_n__dbcon_a62b3c7f92b7b6c06d24b9c76e31aa4e7}{j} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a429c00f0b03f4f27e9854fbed5db3764}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!avspc@{avspc}}
+\index{avspc@{avspc}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{avspc}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::avspc} = \-A\-I\-P\-S\-Task('\-A\-V\-S\-P\-C')}}\label{namespacee_m_e_r_l_i_n__dbcon_a429c00f0b03f4f27e9854fbed5db3764}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a04e130b43c6df2215bebc23fa9dca4b1}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!data@{data}}
+\index{data@{data}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::data} = \-A\-I\-P\-S\-U\-V\-Data({\bf queue\-N\-A\-M\-E}\mbox{[}0\mbox{]}, {\bf queue\-K\-L\-A\-S}\mbox{[}0\mbox{]}, {\bf indisk}, {\bf queue\-S\-E\-Q}\mbox{[}0\mbox{]})}}\label{namespacee_m_e_r_l_i_n__dbcon_a04e130b43c6df2215bebc23fa9dca4b1}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_ab17a9c5aaeb6b610ba038d24839ab3b2}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!dbcon@{dbcon}}
+\index{dbcon@{dbcon}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{dbcon}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::dbcon} = \-A\-I\-P\-S\-Task('\-D\-B\-C\-O\-N')}}\label{namespacee_m_e_r_l_i_n__dbcon_ab17a9c5aaeb6b610ba038d24839ab3b2}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a8fd1244644d23f545f8a48a7713c73c5}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!filelist@{filelist}}
+\index{filelist@{filelist}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{filelist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf list} {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::filelist} = \mbox{[}$\,$\mbox{]}}}\label{namespacee_m_e_r_l_i_n__dbcon_a8fd1244644d23f545f8a48a7713c73c5}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a02dbe30556487e3ce9717f700e863dd7}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!i@{i}}
+\index{i@{i}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::i} = 0}}\label{namespacee_m_e_r_l_i_n__dbcon_a02dbe30556487e3ce9717f700e863dd7}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!indisk@{indisk}}
+\index{indisk@{indisk}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{indisk}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::indisk} = raw\-\_\-input()}}\label{namespacee_m_e_r_l_i_n__dbcon_a3b3d57aefde6e9d540ecb3801fac5664}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a306e8762b0925929428f0264f23a6674}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!indxr@{indxr}}
+\index{indxr@{indxr}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{indxr}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::indxr} = \-A\-I\-P\-S\-Task('\-I\-N\-D\-X\-R')}}\label{namespacee_m_e_r_l_i_n__dbcon_a306e8762b0925929428f0264f23a6674}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a62b3c7f92b7b6c06d24b9c76e31aa4e7}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!j@{j}}
+\index{j@{j}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{j}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::j} = 0}}\label{namespacee_m_e_r_l_i_n__dbcon_a62b3c7f92b7b6c06d24b9c76e31aa4e7}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_ab058e469d8921bc98b806969ffd1e2a2}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!list@{list}}
+\index{list@{list}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf list} {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::list} = \mbox{[}$\,$\mbox{]}}}\label{namespacee_m_e_r_l_i_n__dbcon_ab058e469d8921bc98b806969ffd1e2a2}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a0b851c2b085a1289afca9f960d54d4c6}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!msort@{msort}}
+\index{msort@{msort}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{msort}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::msort} = \-A\-I\-P\-S\-Task('\-M\-S\-O\-R\-T')}}\label{namespacee_m_e_r_l_i_n__dbcon_a0b851c2b085a1289afca9f960d54d4c6}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_ac41ff8a94095c2e305fed016874bb042}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!nchan@{nchan}}
+\index{nchan@{nchan}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{nchan}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::nchan} = raw\-\_\-input()}}\label{namespacee_m_e_r_l_i_n__dbcon_ac41ff8a94095c2e305fed016874bb042}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_aab95cae7a70890c472b8b8feb7d11ceb}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!now@{now}}
+\index{now@{now}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{now}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::now} = today.\-strftime(\char`\"{}\%\-Y\%m\%d\char`\"{})}}\label{namespacee_m_e_r_l_i_n__dbcon_aab95cae7a70890c472b8b8feb7d11ceb}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a5d477fadbfaebfae4c30eb008c302f01}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!numfiles@{numfiles}}
+\index{numfiles@{numfiles}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{numfiles}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::numfiles} = len({\bf pca}\mbox{[}{\bf indisk}\mbox{]})}}\label{namespacee_m_e_r_l_i_n__dbcon_a5d477fadbfaebfae4c30eb008c302f01}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a10a2e5d653a36bede24e60c74e4ed0a3}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!outdisk@{outdisk}}
+\index{outdisk@{outdisk}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{outdisk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::outdisk} = {\bf indisk}}}\label{namespacee_m_e_r_l_i_n__dbcon_a10a2e5d653a36bede24e60c74e4ed0a3}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_ad71cfe913fce9baa62e0ea086283c28e}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!pca@{pca}}
+\index{pca@{pca}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{pca}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::pca} = \-A\-I\-P\-S\-Cat({\bf indisk})}}\label{namespacee_m_e_r_l_i_n__dbcon_ad71cfe913fce9baa62e0ea086283c28e}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a486d24d9ef703df2acee99e4e3817adb}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!queue\-K\-L\-A\-S@{queue\-K\-L\-A\-S}}
+\index{queue\-K\-L\-A\-S@{queue\-K\-L\-A\-S}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{queue\-K\-L\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::queue\-K\-L\-A\-S} = deque(\mbox{[}$\,$\mbox{]})}}\label{namespacee_m_e_r_l_i_n__dbcon_a486d24d9ef703df2acee99e4e3817adb}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a7d3a6f07cf87a01be51860872f9299f4}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!queue\-N\-A\-M\-E@{queue\-N\-A\-M\-E}}
+\index{queue\-N\-A\-M\-E@{queue\-N\-A\-M\-E}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{queue\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::queue\-N\-A\-M\-E} = deque(\mbox{[}$\,$\mbox{]})}}\label{namespacee_m_e_r_l_i_n__dbcon_a7d3a6f07cf87a01be51860872f9299f4}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a0e55c34dc1aa2bca11dd0c616d8ece31}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!queue\-S\-E\-Q@{queue\-S\-E\-Q}}
+\index{queue\-S\-E\-Q@{queue\-S\-E\-Q}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{queue\-S\-E\-Q}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::queue\-S\-E\-Q} = deque(\mbox{[}$\,$\mbox{]})}}\label{namespacee_m_e_r_l_i_n__dbcon_a0e55c34dc1aa2bca11dd0c616d8ece31}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a504efe89c5a32a95950b6c5e078315e5}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!today@{today}}
+\index{today@{today}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{today}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::today} = date.\-today()}}\label{namespacee_m_e_r_l_i_n__dbcon_a504efe89c5a32a95950b6c5e078315e5}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a38e946965ca0b344061675a1a395cb08}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!usernum@{usernum}}
+\index{usernum@{usernum}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{usernum}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::usernum} = raw\-\_\-input()}}\label{namespacee_m_e_r_l_i_n__dbcon_a38e946965ca0b344061675a1a395cb08}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_a2cd3578d0533cf504b1b59ae5521fe7a}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!uvdata@{uvdata}}
+\index{uvdata@{uvdata}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{uvdata}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::uvdata} = \-A\-I\-P\-S\-U\-V\-Data({\bf pca}\mbox{[}{\bf indisk}\mbox{]}\mbox{[}{\bf i}\mbox{]}\mbox{[}\char`\"{}name\char`\"{}\mbox{]}, pca\mbox{[}{\bf indisk}\mbox{]}\mbox{[}{\bf i}\mbox{]}\mbox{[}\char`\"{}klass\char`\"{}\mbox{]}, indisk, {\bf pca}\mbox{[}{\bf indisk}\mbox{]}\mbox{[}{\bf i}\mbox{]}\mbox{[}\char`\"{}seq\char`\"{}\mbox{]})}}\label{namespacee_m_e_r_l_i_n__dbcon_a2cd3578d0533cf504b1b59ae5521fe7a}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_ab9be6ea6704da37fee2dea65d409a370}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!uvdata1@{uvdata1}}
+\index{uvdata1@{uvdata1}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{uvdata1}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::uvdata1} = \-A\-I\-P\-S\-U\-V\-Data(queue\-N\-A\-M\-E.\-popleft(), queue\-K\-L\-A\-S.\-popleft(), {\bf indisk}, queue\-S\-E\-Q.\-popleft())}}\label{namespacee_m_e_r_l_i_n__dbcon_ab9be6ea6704da37fee2dea65d409a370}
+\hypertarget{namespacee_m_e_r_l_i_n__dbcon_af2aa3e117609642e2b32301d834da77b}{\index{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}!uvdata2@{uvdata2}}
+\index{uvdata2@{uvdata2}!eMERLIN_dbcon@{e\-M\-E\-R\-L\-I\-N\-\_\-dbcon}}
+\subsubsection[{uvdata2}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf e\-M\-E\-R\-L\-I\-N\-\_\-dbcon\-::uvdata2} = \-A\-I\-P\-S\-U\-V\-Data(queue\-N\-A\-M\-E.\-popleft(), queue\-K\-L\-A\-S.\-popleft(), {\bf indisk}, queue\-S\-E\-Q.\-popleft())}}\label{namespacee_m_e_r_l_i_n__dbcon_af2aa3e117609642e2b32301d834da77b}

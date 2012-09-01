@@ -1,0 +1,51 @@
+\hypertarget{basilisk_8bak_2njj__scripts_2pipeline_8py}{\section{basilisk.\-bak/njj\-\_\-scripts/pipeline.py \-File \-Reference}
+\label{basilisk_8bak_2njj__scripts_2pipeline_8py}\index{basilisk.\-bak/njj\-\_\-scripts/pipeline.\-py@{basilisk.\-bak/njj\-\_\-scripts/pipeline.\-py}}
+}
+\subsection*{\-Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacepipeline}{pipeline}
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacepipeline_ac80264ca3205ed250219160b6187dff9}{pipeline.\-datadir} = raw\-\_\-input('\-Enter the name of the data directory\-: ')
+\item 
+tuple \hyperlink{namespacepipeline_a325f1a801713a0281d349dfbff21cb78}{pipeline.\-flog} = open('pipeline.\-cfg','w')
+\item 
+tuple \hyperlink{namespacepipeline_a9c3dea94f17dc5a1da55cb9ca7dea740}{pipeline.\-files} = np.\-loadtxt('tmp\-\_\-pipeline.\-log',dtype='\-S512')
+\item 
+list \hyperlink{namespacepipeline_a6f2fb1d3250f1f8b6bd4535247b8a9a7}{pipeline.\-fringenum} = \mbox{[}0,3\mbox{]}
+\item 
+list \hyperlink{namespacepipeline_a3621af01b0571f7eff023145c99b3401}{pipeline.\-fringefits} = files\mbox{[}fringenum\mbox{]}
+\item 
+string \hyperlink{namespacepipeline_a3bae9a2cdf4fba11dac330b8005310a4}{pipeline.\-fringename} = '1436+6336'
+\item 
+list \hyperlink{namespacepipeline_ac1c3efa973c83639249a0124f5d0b1be}{pipeline.\-phasenum} = \mbox{[}0,3\mbox{]}
+\item 
+list \hyperlink{namespacepipeline_ae6d6bf5c8ff903dca0d8e8c8c0aa83fb}{pipeline.\-phasefits} = files\mbox{[}phasenum\mbox{]}
+\item 
+string \hyperlink{namespacepipeline_a3889949f24f7ee0ddf076131f3ba6faa}{pipeline.\-phasename} = '1436+6336'
+\item 
+list \hyperlink{namespacepipeline_ac1761c5c6599d1ba17c7208c9f78354a}{pipeline.\-targnum} = \mbox{[}1,2\mbox{]}
+\item 
+list \hyperlink{namespacepipeline_a0a1c37799e950441dca0da0fb652ee9a}{pipeline.\-targfits} = files\mbox{[}targnum\mbox{]}
+\item 
+string \hyperlink{namespacepipeline_a16df6cb6fb969f0e5ca43f213ce64118}{pipeline.\-targname} = '1449+6336'
+\item 
+tuple \hyperlink{namespacepipeline_aba50186d512bf0abac666d6240112f06}{pipeline.\-freqsquash} = int(raw\-\_\-input('\-Enter the factor for frequency squashing '))
+\item 
+string \hyperlink{namespacepipeline_a0c63f0078f780b925a9ff4e7152fd594}{pipeline.\-vis} = 'fringe.\-ms'
+\item 
+string \hyperlink{namespacepipeline_ab3aedaf24061f05c06f13e3974bb528f}{pipeline.\-mode} = 'quack'
+\item 
+float \hyperlink{namespacepipeline_a79d2ebe895f856da9610081a56d7d7b8}{pipeline.\-quackinterval} = 30.\-0
+\item 
+string \hyperlink{namespacepipeline_a7f4725d9856743ba5e6bf500e4e5ecb0}{pipeline.\-quackmode} = 'beg'
+\item 
+tuple \hyperlink{namespacepipeline_a588e4fbfb4e0417f484202a3b99b6246}{pipeline.\-f} = open('whereis\-\_\-rficonsole')
+\item 
+tuple \hyperlink{namespacepipeline_a4082c06691225d68a0ad3c6c56e73418}{pipeline.\-line} = f.\-readline()
+\item 
+list \hyperlink{namespacepipeline_aba26565fe80f75bd4b4aaaad740095d6}{pipeline.\-command} = line\mbox{[}0\-:len(line)-\/1\mbox{]}
+\end{DoxyCompactItemize}
