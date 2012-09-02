@@ -49,10 +49,8 @@ class Quitter(object):
     def __CleanLog(self):
         """Remove colour strings from the log file"""
         log.debug(utils.blue + "Quitter.__CleanLog()" + utils.normal)
-        path = self.settings["logpath"].rstrip("/") + "/"
-                             + self.settings["logfile"]
-        os.system("cat " + path + " | sed 's/\x1b\[.[0123456789;]*m//g' > "
-                  + path)
+        path = self.settings["logpath"].rstrip("/") + "/" + self.settings["logfile"]
+        os.system("cat " + path + " | sed 's/\x1b\[.[0123456789;]*m//g' > " + path)
 
     def __WriteConfig(self):
         """Save current settings to file."""
@@ -68,10 +66,7 @@ class Quitter(object):
             log.info("Task Completed without (apparent) errors.")
         for n in list(log.handlers):
             log.removeHandler(n)
-            
-        # Print a random quote.
-        msg_pack = utils.messages[int(self.settings["MsgTheme"])][0]    
-        msg = utils.RandomMsg(msg_pack)
+        msg = utils.RandomMsg(utils.messages[int(self.settings["MsgTheme"])][0])
         print utils.red + msg + utils.normal
         sys.exit(status)
 
