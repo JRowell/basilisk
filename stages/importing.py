@@ -136,7 +136,7 @@ class importing(object):
                     ipath = self.settings["inpath"]
                     opath = self.settings["outpath"]
                     filename = convert.split('/')[-1].split('.')[0]
-                    convert = ipath.rstrip("/") + "/" + convert
+                    #convert = ipath.rstrip("/") + "/" + convert
                     converted = opath.rstrip("/") + "/" + filename + ".ms"
                     log.info("Converting: '" + convert + "' --> '" + converted + "'")
 
